@@ -1,11 +1,79 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Android: Sistema Operativo</title>
+  <link rel="stylesheet" href="../styles.css" />
 </head>
 <body>
-    
+  <div class="content">
+    <h1>Android: Sistema Operativo</h1>
+
+    <h2>Introduzione</h2>
+    <p>
+      Android è un sistema operativo open-source sviluppato inizialmente da Android Inc. e acquisito da Google nel 2005. È progettato principalmente per dispositivi mobili come smartphone e tablet. È basato sul kernel Linux e offre un'ampia gamma di funzionalità che lo rendono uno dei sistemi operativi più utilizzati al mondo.
+    </p>
+
+    <h2>Come è Fatto</h2>
+    <p>
+      Android ha un'architettura a strati che include:
+    </p>
+    <ul>
+      <li>
+        <strong>Linux Kernel</strong>: versione base 2.6 modificata da Google, gestisce driver hardware (WiFi, USB, Bluetooth, batteria, fotocamera, touchscreen...).
+      </li>
+      <li>
+        <strong>Android Runtime (ART / DVM)</strong>: esegue le app tramite Dalvik Virtual Machine (con compilatore Just-In-Time) o ART (con compilazione Ahead-of-Time). Le app sono in formato .apk, simile ai file .jar.
+      </li>
+      <li>
+        <strong>Librerie</strong>: includono le Core Libraries per funzioni Java e librerie native per la piattaforma.
+      </li>
+      <li>
+        <strong>Application Framework</strong>: fornisce API Java. Comprende:
+        <ul>
+          <li><strong>Activity Manager</strong>: gestisce schermate (activity) e interazione utente.</li>
+          <li><strong>Window Manager</strong>: gestisce le finestre delle app e la loro visibilità a schermo.</li>
+        </ul>
+      </li>
+      <li>
+        <strong>Applicazioni</strong>: interfaccia utente e app preinstallate come telefono, browser e contatti.
+      </li>
+    </ul>
+    <p>
+      Di seguito uno schema a strati dell’architettura Android:
+    </p>
+    <img src="https://upload.wikimedia.org/wikipedia/commons/6/6a/Android_Architecture.svg" alt="Architettura Android" width="600"/>
+
+    <h2>Perché Ogni Versione Ha il Nome di un Cibo?</h2>
+    <p>
+      Google ha adottato una convenzione divertente per nominare le versioni di Android, utilizzando nomi di dolci e dessert in ordine alfabetico. Questo approccio ha reso le versioni di Android memorabili e uniche.
+    </p>
+    <ul>
+      <li><strong>Android 1.5</strong>: Cupcake</li>
+      <li><strong>Android 1.6</strong>: Donut</li>
+      <li><strong>Android 2.0-2.1</strong>: Eclair</li>
+      <li><strong>Android 2.2</strong>: Froyo</li>
+      <li><strong>Android 2.3</strong>: Gingerbread</li>
+      <li><strong>Android 3.0</strong>: Honeycomb</li>
+      <li><strong>Android 4.0</strong>: Ice Cream Sandwich</li>
+      <li><strong>Android 4.1-4.3</strong>: Jelly Bean</li>
+      <li><strong>Android 4.4</strong>: KitKat</li>
+      <li><strong>Android 5.0</strong>: Lollipop</li>
+      <li><strong>Android 6.0</strong>: Marshmallow</li>
+      <li><strong>Android 7.0</strong>: Nougat</li>
+      <li><strong>Android 8.0</strong>: Oreo</li>
+      <li><strong>Android 9.0</strong>: Pie</li>
+    </ul>
+
+    <h2>Come è Realizzato</h2>
+    <p>
+      Android è progettato per essere modulare e scalabile. Gli sviluppatori possono creare applicazioni usando Java, Kotlin o C++. Il sistema sfrutta API dell'Application Framework e librerie runtime per permettere il funzionamento delle app su un'ampia varietà di hardware. Inoltre, ogni app gira in un processo separato grazie alla gestione della Dalvik/ART, garantendo sicurezza e isolamento.
+    </p>
+
+    <div class="cta-buttons">
+      <a href="../index.html" class="section-btn">Torna alla Home</a>
+    </div>
+  </div>
 </body>
 </html>

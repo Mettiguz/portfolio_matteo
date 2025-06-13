@@ -4,319 +4,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Eva Mozes Kor - Memoria e Perdono</title>
-  <style>
-    body {
-  margin: 0;
-  font-family: 'Segoe UI', sans-serif;
-  background: linear-gradient(to right, #1f1c2c, #2c274c);
-  color: #fff;
-}
-
-header {
-  padding: 1.5em 2em;
-  display: flex;
-  justify-content: center;
-  position: sticky;
-  top: 0;
-  background: transparent;
-}
-
-.nav-container {
-  max-width: 1200px;
-  width: 100%;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
-.logo {
-  font-weight: bold;
-  font-size: 1.5em;
-}
-
-nav a, nav button {
-  margin: 0 10px;
-  color: #fff;
-  background: none;
-  border: none;
-  cursor: pointer;
-  font-size: 1em;
-  text-decoration: none;
-}
-
-/* Hero Section */
-.hero {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 4em 2em;
-  max-width: 1200px;
-  margin: auto;
-  flex-wrap: wrap;
-}
-
-.hero-text {
-  max-width: 600px;
-}
-
-.hero-text h1 {
-  font-size: 2.5em;
-  margin-bottom: 0.2em;
-}
-
-.hero-text p {
-  font-size: 1.2em;
-  color: #ccc;
-  margin-bottom: 1em;
-}
-
-.highlight {
-  color: #ff8c00;
-}
-
-.hero-image img {
-  width: 300px;
-  border-radius: 20px;
-  box-shadow: 0 0 15px rgba(0,0,0,0.6);
-}
-
-/* Buttons General */
-.cta-buttons a,
-nav .hire-btn,
-nav button {
-  display: inline-block;
-  padding: 0.75em 1.5em;
-  margin: 0.5em 0.5em 0 0;
-  border-radius: 30px;
-  text-decoration: none;
-  font-weight: 600;
-  font-size: 1em;
-  transition: all 0.3s ease;
-  box-shadow: 0 0 10px rgba(255, 140, 0, 0.3);
-}
-
-/* Download CV Button */
-.download-btn {
-  background: linear-gradient(135deg, #ff9900, #ff5e00);
-  color: white;
-  border: none;
-}
-
-.download-btn:hover {
-  background: linear-gradient(135deg, #ff5e00, #ff9900);
-  box-shadow: 0 0 15px rgba(255, 94, 0, 0.6);
-}
-
-/* Contattami Button */
-.secondary-btn {
-  background: transparent;
-  border: 2px solid #ff9900;
-  color: #ff9900;
-}
-
-.secondary-btn:hover {
-  background-color: #ff9900;
-  color: white;
-  box-shadow: 0 0 15px rgba(255, 153, 0, 0.6);
-}
-
-/* Hire Me Button in Header */
-.hire-btn {
-  background-color: #7b4fff;
-  color: #fff;
-  border: none;
-  padding: 0.6em 1.4em;
-  border-radius: 30px;
-  font-weight: bold;
-  transition: all 0.3s ease;
-  box-shadow: 0 0 10px rgba(123, 79, 255, 0.4);
-}
-
-.hire-btn:hover {
-  background-color: #a98cff;
-  box-shadow: 0 0 15px rgba(123, 79, 255, 0.7);
-}
-
-/* Section Styling */
-.dark-section {
-  background-color: #2a2540;
-  padding: 3em 2em;
-  margin-top: 1em;
-}
-
-.dark-section h2 {
-  color: #ff8c00;
-  margin-bottom: 0.5em;
-}
-
-.dark-section p {
-  font-size: 1.1em;
-  color: #ccc;
-}
-
-/* Section CTA Buttons */
-.section-btn {
-  background: linear-gradient(135deg, #00c3ff, #0047ff);
-  color: white;
-  border: none;
-  border-radius: 30px;
-  padding: 0.7em 1.4em;
-  font-weight: 600;
-  box-shadow: 0 0 10px rgba(0, 195, 255, 0.3);
-  transition: all 0.3s ease;
-  text-decoration: none;
-  display: inline-block;
-  margin-top: 1em;
-}
-
-.section-btn:hover {
-  background: linear-gradient(135deg, #0047ff, #00c3ff);
-  box-shadow: 0 0 15px rgba(0, 195, 255, 0.6);
-  transform: translateY(-2px);
-}
-
-/* Popup */
-.popup {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: rgba(0,0,0,0.7);
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.popup.hidden {
-  display: none;
-}
-
-.popup-content {
-  background: #1f1c2c;
-  color: #fff;
-  padding: 2em;
-  border-radius: 10px;
-  width: 300px;
-  position: relative;
-  border: 1px solid #444;
-}
-
-.popup-content h3 {
-  color: #ff8c00;
-  margin-top: 0;
-}
-
-.popup-content ul {
-  list-style: none;
-  padding: 0;
-}
-
-.popup-content li {
-  margin: 0.5em 0;
-  border-bottom: 1px solid #444;
-  padding-bottom: 0.3em;
-}
-
-.close {
-  position: absolute;
-  top: 10px;
-  right: 15px;
-  font-size: 1.5em;
-  cursor: pointer;
-  color: #fff;
-}
-.cta-buttons {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 1rem;
-  justify-content: center;
-  margin-top: 1rem;
-}
-
-.section-btn {
-  background-color: #007bff;
-  color: white;
-  padding: 0.7em 1.5em;
-  text-decoration: none;
-  border-radius: 5px;
-  font-weight: bold;
-  transition: background-color 0.3s;
-}
-
-.section-btn:hover {
-  background-color: #0056b3;
-}
-.cta-buttons {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 1rem;
-  justify-content: center;
-  margin-top: 1rem;
-  padding: 1rem;
-}
-
-.section-btn {
-  flex: 1 1 calc(25% - 1rem); /* 4 bottoni per riga, con margine */
-  max-width: calc(25% - 1rem);
-  text-align: center;
-  padding: 0.8rem 1.2rem;
-  background-color: #007bff;
-  color: white;
-  text-decoration: none;
-  border-radius: 6px;
-  font-weight: bold;
-  transition: background-color 0.3s ease;
-}
-
-.section-btn:hover {
-  background-color: #0056b3;
-}
-
-@media (max-width: 768px) {
-  .section-btn {
-    flex: 1 1 calc(50% - 1rem); /* 2 bottoni per riga */
-    max-width: calc(50% - 1rem);
-  }
-}
-
-@media (max-width: 480px) {
-  .section-btn {
-    flex: 1 1 100%; /* 1 bottone per riga */
-    max-width: 100%;
-  }
-}
-    .content {
-      max-width: 800px;
-      margin: auto;
-      padding: 2em;
-    }
-
-    h1, h2 {
-      color: #ff8c00;
-    }
-
-    p {
-      line-height: 1.6;
-      color: #ccc;
-    }
-
-    img {
-      width: 100%;
-      border-radius: 10px;
-      margin-top: 1em;
-    }
-
-    ul {
-      list-style-type: disc;
-      padding-left: 20px;
-    }
-
-    .lang-switch {
-      text-align: center;
-      margin-bottom: 1em;
-    }
-  </style>
+  <link rel="stylesheet" href="../styles.css" />
 </head>
 <body>
   <div class="content">
@@ -337,7 +25,7 @@ nav button {
         All’arrivo nel campo di sterminio, Eva e Miriam furono selezionate da Josef Mengele per i suoi esperimenti pseudoscientifici sui gemelli. Furono sottoposte a test medici crudeli che misero a rischio la loro vita, ma riuscirono a sopravvivere fino alla liberazione del campo.
       </p>
 
-      <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/9b/Eva_Mozes_Kor_speaks_%28cropped%29.jpg/640px-Eva_Mozes_Kor_speaks_%28cropped%29.jpg" alt="Eva Mozes Kor in una conferenza">
+      <img src="https://bloximages.chicago2.vip.townnews.com/newsbug.info/content/tncms/assets/v3/editorial/3/01/30160e2b-2592-59fc-8344-0d3beb9d04b5/5ac7b477199d3.image.jpg?resize=400%2C277" alt="Eva Mozes Kor in una conferenza">
 
       <h2>Il messaggio del perdono</h2>
       <p>
@@ -351,7 +39,7 @@ nav button {
         <li>Promotrice della pace e del dialogo</li>
       </ul>
 
-      <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/2d/Eva_Kor_and_Mengele_Twins.jpg/640px-Eva_Kor_and_Mengele_Twins.jpg" alt="Foto storica di Eva e Miriam, gemelle sopravvissute">
+      <img src="https://2.bp.blogspot.com/-R_9p3GsVy_E/U4YntI0tLrI/AAAAAAAAFYM/6HWEA4Oy3fw/s1600/rad-news02.jpg" alt="Foto storica di Eva e Miriam, gemelle sopravvissute">
 
       <p>
         Eva Mozes Kor è morta nel 2019 durante una visita proprio ad Auschwitz. La sua vita rappresenta un potente simbolo di memoria, resilienza e coraggio.
@@ -371,7 +59,7 @@ nav button {
         Upon arrival at the death camp, Eva and Miriam were selected by Josef Mengele for his pseudoscientific experiments on twins. They endured cruel medical procedures that endangered their lives, but survived until the camp was liberated.
       </p>
 
-      <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/9b/Eva_Mozes_Kor_speaks_%28cropped%29.jpg/640px-Eva_Mozes_Kor_speaks_%28cropped%29.jpg" alt="Eva Mozes Kor speaking at an event">
+      <img src="https://bloximages.chicago2.vip.townnews.com/newsbug.info/content/tncms/assets/v3/editorial/3/01/30160e2b-2592-59fc-8344-0d3beb9d04b5/5ac7b477199d3.image.jpg?resize=400%2C277" alt="Eva Mozes Kor speaking at an event">
 
       <h2>The message of forgiveness</h2>
       <p>
@@ -385,11 +73,15 @@ nav button {
         <li>Promoter of peace and dialogue</li>
       </ul>
 
-      <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/2d/Eva_Kor_and_Mengele_Twins.jpg/640px-Eva_Kor_and_Mengele_Twins.jpg" alt="Historic photo of Eva and Miriam, surviving twins">
+      <img src="https://2.bp.blogspot.com/-R_9p3GsVy_E/U4YntI0tLrI/AAAAAAAAFYM/6HWEA4Oy3fw/s1600/rad-news02.jpg" alt="Historic photo of Eva and Miriam, surviving twins">
 
       <p>
         Eva Mozes Kor died in 2019 during a visit to Auschwitz. Her life remains a powerful symbol of memory, resilience, and courage.
       </p>
+    </div>
+
+    <div class="cta-buttons">
+      <a href="../materie.html" class="section-btn">Torna a materie</a>
     </div>
   </div>
 
