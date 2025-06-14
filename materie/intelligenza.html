@@ -1,11 +1,62 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="it">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Reti Neurali Convoluzionali (CNN)</title>
+  <link rel="stylesheet" href="../styles.css" />
 </head>
 <body>
-    
+  <div class="content">
+    <h1>Reti Neurali Convoluzionali (CNN)</h1>
+
+    <h2>Cos'è una CNN?</h2>
+    <p>
+      Le Reti Neurali Convoluzionali (Convolutional Neural Networks) sono un tipo di rete neurale artificiale progettata per elaborare dati che hanno una struttura a griglia, come le immagini. Le CNN sono ispirate alla corteccia visiva degli esseri umani, in grado di riconoscere forme e oggetti attraverso livelli successivi di elaborazione.
+    </p>
+    <img src="https://www.ionos.it/digitalguide/fileadmin/DigitalGuide/Schaubilder/diagramma-rete-neurale-convoluzionale.png" alt="Schema CNN" />
+
+    <h2>Componenti principali</h2>
+    <ul>
+      <li><strong>Layer di Convoluzione:</strong> utilizza filtri per rilevare caratteristiche come bordi o texture.</li>
+      <li><strong>ReLU (Rectified Linear Unit):</strong> introduce la non linearità tra i livelli.</li>
+      <li><strong>Pooling:</strong> riduce le dimensioni spaziali delle feature map (es. Max Pooling).</li>
+      <li><strong>Flatten:</strong> converte la struttura 2D in un vettore per il livello finale.</li>
+      <li><strong>Fully Connected Layer:</strong> neuroni completamente connessi usati per la classificazione.</li>
+    </ul>
+    <img src="https://static.wixstatic.com/media/3c029f_0c1cf426bb7540e6bcdf61c080704275~mv2.jpeg/v1/fill/w_980,h_331,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/3c029f_0c1cf426bb7540e6bcdf61c080704275~mv2.jpeg" alt="Architettura CNN" />
+
+    <h2>Come funziona la convoluzione?</h2>
+    <p>
+      La convoluzione avviene quando un filtro (kernel) scorre su porzioni di immagine calcolando prodotti scalari. Questo evidenzia strutture locali, come linee o angoli, cruciali per il riconoscimento.
+    </p>
+    <img src="https://images.everyeye.it/img-singole/articolo-42327.jpg" alt="Esempio di convoluzione" />
+
+    <h2>Il ruolo del Pooling</h2>
+    <p>
+      Il pooling riduce la dimensionalità delle immagini mantenendo le informazioni più rilevanti. Il <strong>Max Pooling</strong> seleziona il valore massimo da una regione, mentre l'<strong>Average Pooling</strong> calcola la media.
+    </p>
+    <img src="https://cs231n.github.io/assets/cnn/pool.jpeg" alt="Esempio di pooling" />
+
+    <h2>Applicazioni delle CNN</h2>
+    <ul>
+      <li>Riconoscimento facciale e biometrico</li>
+      <li>Classificazione immagini (es. diagnosi medica)</li>
+      <li>Riconoscimento di oggetti nei video</li>
+      <li>Auto a guida autonoma (riconoscimento segnali e corsie)</li>
+    </ul>
+
+    <h2>Perché sono così potenti?</h2>
+    <p>
+      Le CNN riescono a estrarre automaticamente caratteristiche salienti dai dati visivi, senza necessità di programmazione manuale. Questo le rende estremamente efficaci in compiti complessi come il riconoscimento di oggetti, volti o anomalie.
+    </p>
+    <blockquote>
+      <em>“Le CNN hanno rivoluzionato la visione artificiale, proprio come i transistor hanno rivoluzionato l’elettronica.”</em>
+    </blockquote>
+
+    <div class="cta-buttons">
+      <a href="../materie.html" class="section-btn">Torna a materie</a>
+    </div>
+  </div>
 </body>
 </html>

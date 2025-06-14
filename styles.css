@@ -325,3 +325,53 @@ nav button {
     max-width: 100%;
   }
 }
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 20px;
+    line-height: 1.6;
+}
+
+h1, h2 {
+    color: #333;
+}
+
+.slide {
+    background-color: white;
+    padding: 20px;
+    margin-bottom: 30px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+img {
+    max-width: 100%;
+    border-radius: 10px;
+    margin-top: 10px;
+}
+
+ul {
+    padding-left: 20px;
+}
+
+strong {
+    color: #2c3e50;
+}
+.slide:hover {
+    transform: scale(1.02);
+    transition: transform 0.3s ease;
+}
+img {
+    margin: 15px 0;
+}
+p {
+    font-size: 1.1em;
+    color: #444;
+}
+ul li::marker {
+    color: #2c3e50;
+}
+h1, h2 {
+    text-align: center;
+}
+
