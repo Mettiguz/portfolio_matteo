@@ -1,11 +1,85 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Integrali Definiti</title>
+  <link rel="stylesheet" href="../styles.css" />
 </head>
 <body>
-    
+  <div class="content">
+    <h1>Integrali Definiti</h1>
+
+    <h2>Introduzione</h2>
+    <p>
+      Gli integrali definiti sono uno strumento fondamentale del calcolo integrale, utilizzato per calcolare l'area sotto una curva in un intervallo specifico. Sono ampiamente applicati in matematica, fisica, ingegneria e altre discipline scientifiche.
+    </p>
+
+    <h2>Definizione</h2>
+    <p>
+      Un integrale definito è rappresentato come:
+    </p>
+    <p>
+      <em>∫<sub>a</sub><sup>b</sup> f(x) dx</em>
+    </p>
+    <p>
+      Dove:
+    </p>
+    <ul>
+      <li><strong>a</strong>: Limite inferiore dell'integrale.</li>
+      <li><strong>b</strong>: Limite superiore dell'integrale.</li>
+      <li><strong>f(x)</strong>: Funzione da integrare.</li>
+      <li><strong>dx</strong>: Indica che l'integrazione è rispetto alla variabile x.</li>
+    </ul>
+
+    <h2>Proprietà degli Integrali Definiti</h2>
+    <ul>
+      <li><strong>Linearità</strong>: ∫<sub>a</sub><sup>b</sup> [c·f(x) + g(x)] dx = c·∫<sub>a</sub><sup>b</sup> f(x) dx + ∫<sub>a</sub><sup>b</sup> g(x) dx</li>
+      <li><strong>Invertibilità</strong>: ∫<sub>a</sub><sup>b</sup> f(x) dx = -∫<sub>b</sub><sup>a</sup> f(x) dx</li>
+      <li><strong>Additività</strong>: ∫<sub>a</sub><sup>c</sup> f(x) dx + ∫<sub>c</sub><sup>b</sup> f(x) dx = ∫<sub>a</sub><sup>b</sup> f(x) dx</li>
+    </ul>
+
+    <h2>Calcolo degli Integrali Definiti</h2>
+    <p>
+      Per calcolare un integrale definito, si utilizza il teorema fondamentale del calcolo:
+    </p>
+    <p>
+      <em>∫<sub>a</sub><sup>b</sup> f(x) dx = F(b) - F(a)</em>
+    </p>
+    <p>
+      Dove F(x) è una primitiva di f(x).
+    </p>
+
+    <h2>Esempio</h2>
+    <p>
+      Calcoliamo l'integrale definito di f(x) = x² nell'intervallo [1, 3]:
+    </p>
+    <p>
+      <em>∫<sub>1</sub><sup>3</sup> x² dx = [x³/3]<sub>1</sub><sup>3</sup> = (27/3) - (1/3) = 26/3</em>
+    </p>
+
+    <h2>Applicazioni</h2>
+    <ul>
+      <li>Calcolo di aree e volumi:
+        <p>Esempio: Calcolare l'area sotto la curva f(x) = x² tra x = 0 e x = 2:
+          <em>∫<sub>0</sub><sup>2</sup> x² dx = [x³/3]<sub>0</sub><sup>2</sup> = (8/3) - (0) = 8/3</em>
+        </p>
+      </li>
+      <li>Studio di fenomeni fisici come lavoro e energia:
+        <p>Esempio: Calcolare il lavoro svolto da una forza variabile F(x) = 2x tra x = 1 e x = 4:
+          <em>∫<sub>1</sub><sup>4</sup> 2x dx = [x²]<sub>1</sub><sup>4</sup> = (16) - (1) = 15</em>
+        </p>
+      </li>
+      <li>Analisi statistica e probabilità:
+        <p>Esempio: Calcolare la probabilità che una variabile casuale continua con densità f(x) = 3x² sia compresa tra x = 0 e x = 1:
+          <em>∫<sub>0</sub><sup>1</sup> 3x² dx = [x³]<sub>0</sub><sup>1</sup> = (1) - (0) = 1</em>
+        </p>
+      </li>
+    </ul>
+
+    <div class="cta-buttons">
+      <a href="../materie.html" class="section-btn">Torna a materie</a>
+    </div>
+  </div>
 </body>
 </html>
