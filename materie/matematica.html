@@ -34,10 +34,22 @@
 
     <h2>Proprietà degli Integrali Definiti</h2>
     <ul>
-      <li><strong>Linearità</strong>: ∫<sub>a</sub><sup>b</sup> [c·f(x) + g(x)] dx = c·∫<sub>a</sub><sup>b</sup> f(x) dx + ∫<sub>a</sub><sup>b</sup> g(x) dx</li>
-      <li><strong>Invertibilità</strong>: ∫<sub>a</sub><sup>b</sup> f(x) dx = -∫<sub>b</sub><sup>a</sup> f(x) dx</li>
-      <li><strong>Additività</strong>: ∫<sub>a</sub><sup>c</sup> f(x) dx + ∫<sub>c</sub><sup>b</sup> f(x) dx = ∫<sub>a</sub><sup>b</sup> f(x) dx</li>
+       <li><strong>Linearità:</strong> ∫<sub>a</sub><sup>b</sup> [c·f(x) + g(x)] dx = c·∫<sub>a</sub><sup>b</sup> f(x) dx + ∫<sub>a</sub><sup>b</sup> g(x) dx</li>
+      <li><strong>Additività:</strong> ∫<sub>a</sub><sup>c</sup> f(x) dx + ∫<sub>c</sub><sup>b</sup> f(x) dx = ∫<sub>a</sub><sup>b</sup> f(x) dx</li>
+      <li><strong>Monotonia:</strong> Se f(x) ≥ g(x) su [a, b], allora ∫<sub>a</sub><sup>b</sup> f(x) dx ≥ ∫<sub>a</sub><sup>b</sup> g(x) dx</li>
+      <li><strong>Invertibilità:</strong> ∫<sub>a</sub><sup>b</sup> f(x) dx = -∫<sub>b</sub><sup>a</sup> f(x) dx</li>
     </ul>
+    <h2>Teorema di Torricelli-Barrow</h2>
+    <p><strong>(Teorema fondamentale del calcolo integrale - senza dimostrazione)</strong></p>
+    <p>Se f(x) è continua su [a, b] e F(x) è una sua primitiva, allora:</p>
+    <p><em>∫<sub>a</sub><sup>b</sup> f(x) dx = F(b) - F(a)</em></p>
+
+    <h2>Regola per il calcolo dell'integrale definito</h2>
+    <p>Per calcolare un integrale definito:</p>
+    <ol>
+      <li>Trova una primitiva F(x) della funzione f(x).</li>
+      <li>Applica la formula: <strong>∫<sub>a</sub><sup>b</sup> f(x) dx = F(b) - F(a)</strong></li>
+    </ol>
 
     <h2>Calcolo degli Integrali Definiti</h2>
     <p>
@@ -63,16 +75,6 @@
       <li>Calcolo di aree e volumi:
         <p>Esempio: Calcolare l'area sotto la curva f(x) = x² tra x = 0 e x = 2:
           <em>∫<sub>0</sub><sup>2</sup> x² dx = [x³/3]<sub>0</sub><sup>2</sup> = (8/3) - (0) = 8/3</em>
-        </p>
-      </li>
-      <li>Studio di fenomeni fisici come lavoro e energia:
-        <p>Esempio: Calcolare il lavoro svolto da una forza variabile F(x) = 2x tra x = 1 e x = 4:
-          <em>∫<sub>1</sub><sup>4</sup> 2x dx = [x²]<sub>1</sub><sup>4</sup> = (16) - (1) = 15</em>
-        </p>
-      </li>
-      <li>Analisi statistica e probabilità:
-        <p>Esempio: Calcolare la probabilità che una variabile casuale continua con densità f(x) = 3x² sia compresa tra x = 0 e x = 1:
-          <em>∫<sub>0</sub><sup>1</sup> 3x² dx = [x³]<sub>0</sub><sup>1</sup> = (1) - (0) = 1</em>
         </p>
       </li>
     </ul>
